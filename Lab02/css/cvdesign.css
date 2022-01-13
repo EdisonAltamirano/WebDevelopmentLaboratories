@@ -1,0 +1,142 @@
+body{
+    font-family: 'Open Sans', sans-serif !important;
+}
+/* Paletas
+#F9F7F7
+#DBE2EF
+#3F72AF
+#112D4E 
+#CDFFEB
+#009F9D
+#07456F
+#0F0A3C
+*/
+a{
+    color: #3F72AF;
+}
+a:hover{
+    color:#DBE2EF;
+}
+h4{
+    color:#112D4E;
+}
+hr{
+    border-color:#DBE2EF;
+}
+.header{
+    font-size: 50px;
+}
+
+  /* Landing */
+
+  #Landing {
+    background: no-repeat center fixed url("../../images/backgroundimage.jpg");
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.landing-text {
+    position: absolute;
+    margin-top: 35vh;
+    z-index: 2;
+    color: white;
+}
+
+.landing-main-txt {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.landing-hr {
+    width: 35em;
+    transition: ease-in-out .2s;
+    border-color: white !important;
+}
+
+
+#optionsnav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.btn{
+    background: #009F9D;
+    color: white;
+    font-size: 3rem;
+    margin-top: 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+/*Section*/
+#Profile {
+    background: white;
+    padding: 50px 0px 50px 0px;
+    width: inherit;
+    margin: 0;
+}
+#profile-img {
+    border-width: 10px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #dedede;
+}
+#Skills {
+    background: white;
+    padding: 50px 0px 50px 0px;
+    width: inherit;
+    margin: 0;
+}
+.table {
+    border: none;
+}
+
+.table tbody>tr>th {
+    border: none;
+}
+
+table>tbody>tr>th>h5>ul>li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.fa-star {
+    color: #23637c !important;
+}
+.star-off {
+    color: #aeaeae !important;
+    font-size: .95em;
+}
+#Experience {
+    background: #dedede;
+    padding: 50px 0px 50px 0px;
+    width: inherit;
+    margin: 0;
+}
+#Contact {
+    background: #292929;
+    padding: 50px 0 20px;
+    width: inherit;
+    margin: 0;
+    color: #aeaeae;
+}
+.contactdesign{
+    font-size: 30px;
+}
+/* Media Queries */
+
+@media only screen and (max-width: 1200px) {
+    #left-profile {
+        margin-bottom: 25px;
+        text-align: center !important;
+    }
+
+    #right-profile {
+        margin-top: 50px;
+        text-align: center !important;
+    }
+}
