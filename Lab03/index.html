@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+		integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/index.css" />
+</head>
+<script>
+	function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "navbar") {
+			x.className += " responsive";
+		} else {
+			x.className = "navbar";
+		}
+	}
+</script>
+
+<body>
+	<header>
+		<div class="logo position"><img
+				src="https://uploads.codesandbox.io/uploads/user/6eb75550-4d51-47fd-8ec1-d216b5da5e5c/M4sq-logo.jpeg" />
+		</div>
+		<h1 class="position">The ABC Company</h1>
+	</header>
+	<nav class="navbar" id="myTopnav">
+		<a>Home</a>
+		<a>Products</a>
+		<a>About</a>
+		<a>Help</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</nav>
+	<main>
+		<div  class="locatemain">
+		<section class="test">
+			<i class="position  fas fa-apple-alt fa-5x"></i>
+			<h2 class="position">A as in Apple</h2>
+			<p class="position">
+				We take out fruit very seriously at ABC, that is why
+				the A in ABC is for Apple. Try our new AppleBook App,
+				the coolest new technology disrupting the fruit industry.
+
+				This is the Uber of Apples!
+			</p>
+		</section>
+		<section class="test ">
+			<i class="position fas fa-money-bill-wave fa-5x"></i>
+			<h2 class="position">B as in Bail</h2>
+			<p class="position">
+				Do you need Bail! Our new BailFace app will provide you
+				with lawyers and bail money at the push of a button. Its the
+				Facebook of bail bonds!
+			</p>
+		</section>
+		<section class="test ">
+			<i class="position fas fa-utensils fa-5x"></i>
+			<h2 class="position">C as in Curry</h2>
+
+			<p class="position">
+				Fancy some curry! Our new HurryCurry app will provide curry
+				cooked by Italian chefs right to your door. Its the AirBnB of curry!
+			</p>
+		</section>
+	</div>
+	</main>
+	<footer >
+		<hr>
+		<div class="separate">
+		<ul class="social">
+			<li class="social_icon"><i class="fab fa-twitter"></i></li>
+			<li class="social_icon"><i class="fab fa-facebook"></i></li>
+			<li class="social_icon"><i class="fab fa-instagram"></i></li>
+		</ul>
+	</div>
+	</footer>
+</body>
+
+</html>
