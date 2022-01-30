@@ -60,7 +60,7 @@
                 <label for="reserve-unique-id">Unique ID</label>
                 <input type="text" class="form-control" id="reserve-unique-id">
               </div>
-              <button type="submit" class="btn btn-primary submit">Submit</button>
+              <button type="submit" class="btn btn-primary submit" id="add-btn">Submit</button>
             </form>
           </div>
         </div>
@@ -77,7 +77,28 @@
     </footer>
 
   </div>
+  <script type="text/javascript">
+    // Question: What does this code do?
+    $("#add-btn").on("click", function(event) {
+      event.preventDefault();
 
+      var newCharacter = {
+        name: $("#reserve-name").val().trim(),
+        phone: $("#reserve-phone").val().trim(),
+        email: $("#reserve-email").val().trim(),
+        id: $("#reserve-unique-id").val().trim()
+      };
+
+      // Question: What does this code do??
+      $.post("/api/tables", newCharacter)
+        .then(function(data) {
+          console.log(data);
+          alert("Adding character...");
+        });
+
+    });
+
+  </script>
 </body>
 
 </html>
